@@ -30,6 +30,10 @@ namespace _02_WF__Base_Controls_Buttons
             {
                 item.Checked = false;
             }
+            foreach (var item in this.groupBox1.Controls.OfType<RadioButton>())
+            {
+                item.Checked = false;
+            }
         }
 
         private void clickBtn1_Click(object sender, EventArgs e)
