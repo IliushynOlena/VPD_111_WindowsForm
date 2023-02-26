@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_BaseControlsIndicators",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_ProgressBar", "04_ProgressBar\04_ProgressBar.csproj", "{E842BABB-CA19-4BD1-89A9-D11E1294542C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Lists", "05_Lists\05_Lists.csproj", "{C27A6FCC-C1D4-4926-BA70-BAFF142B8926}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Lists", "05_Lists\05_Lists.csproj", "{C27A6FCC-C1D4-4926-BA70-BAFF142B8926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_AdittionalForms", "06_AdittionalForms\06_AdittionalForms.csproj", "{4C4D06FA-3198-49CD-BF11-A5135CF6FA8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_DiffecentDialogs", "07_DiffecentDialogs\07_DiffecentDialogs.csproj", "{267EE75A-9DD6-4F69-8C74-B7DB05CCEA33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{C27A6FCC-C1D4-4926-BA70-BAFF142B8926}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C27A6FCC-C1D4-4926-BA70-BAFF142B8926}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C27A6FCC-C1D4-4926-BA70-BAFF142B8926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C4D06FA-3198-49CD-BF11-A5135CF6FA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C4D06FA-3198-49CD-BF11-A5135CF6FA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C4D06FA-3198-49CD-BF11-A5135CF6FA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C4D06FA-3198-49CD-BF11-A5135CF6FA8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{267EE75A-9DD6-4F69-8C74-B7DB05CCEA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267EE75A-9DD6-4F69-8C74-B7DB05CCEA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267EE75A-9DD6-4F69-8C74-B7DB05CCEA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267EE75A-9DD6-4F69-8C74-B7DB05CCEA33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
