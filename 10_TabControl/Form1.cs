@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace _10_TabControl
 {
     public partial class Form1 : Form
@@ -39,11 +41,46 @@ namespace _10_TabControl
             // 
             // nameTb
             // 
-            TextBox nameTextBox = new TextBox();
+            //TextBox nameTextBox = new TextBox();
+            ListBox nameTextBox = new ListBox();
             nameTextBox.Location = new System.Drawing.Point(454, 510);
             nameTextBox.Name = "nameTb";
-            nameTextBox.Size = new System.Drawing.Size(584, 47);
+            nameTextBox.Size = new System.Drawing.Size(584, 300);
             nameTextBox.TabIndex = 2;
+            nameTextBox.ScrollAlwaysVisible = true;
+            nameTextBox.HorizontalScrollbar = true;
+
+            nameTextBox.AllowDrop = true;
+            nameTextBox.DragEnter += (s, e) =>
+            {
+                if (e.Data.GetDataPresent(DataFormats.Text) || e.Data.GetDataPresent(DataFormats.FileDrop))
+                {
+                    nameTextBox.BackColor = Color.Orange;
+                    e.Effect = DragDropEffects.Copy;
+                }
+                else
+                {
+                    e.Effect = DragDropEffects.None;
+                }
+            };
+            nameTextBox.DragDrop += (s, e) => {
+                if (e.Data.GetDataPresent(DataFormats.Text))
+                {
+                    string item = e.Data.GetData(DataFormats.Text).ToString();
+                    nameTextBox.Items.Add(item);
+                }
+                else if (e.Data.GetDataPresent(DataFormats.FileDrop))
+                {
+                    foreach (var item in (string[])e.Data.GetData(DataFormats.FileDrop))
+                    {
+                        //read from file
+                        StreamReader reader = new StreamReader(item);
+                        nameTextBox.Items.Add(reader.ReadToEnd());
+                        reader.Close();
+                    }
+                }
+                nameTextBox.ResetBackColor();
+            };
             // 
             // ClearBtn
             // 
@@ -54,7 +91,8 @@ namespace _10_TabControl
             clearButton.TabIndex = 3;
             clearButton.Text = "Clear";
             clearButton.UseVisualStyleBackColor = true;
-            clearButton.Click += (s, args)=> { nameTextBox.Clear(); };
+            //clearButton.Click += (s, args)=> { nameTextBox.Clear(); };
+          
 
             page.Controls.Add(namelabel);
             page.Controls.Add(nameTextBox);
@@ -63,6 +101,7 @@ namespace _10_TabControl
             page.UseVisualStyleBackColor = true;
             tabControl1.TabPages.Add(page);
         }
+
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {

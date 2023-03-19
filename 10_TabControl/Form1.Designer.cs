@@ -66,9 +66,10 @@
             // 
             // nameTb
             // 
-            this.nameTb.Location = new System.Drawing.Point(454, 510);
+            this.nameTb.Location = new System.Drawing.Point(426, 500);
+            this.nameTb.Multiline = true;
             this.nameTb.Name = "nameTb";
-            this.nameTb.Size = new System.Drawing.Size(584, 47);
+            this.nameTb.Size = new System.Drawing.Size(722, 47);
             this.nameTb.TabIndex = 2;
             // 
             // ClearBtn
