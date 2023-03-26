@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_RichTextBox", "09_RichTe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_TabControl", "10_TabControl\10_TabControl.csproj", "{3E5CB165-15E3-452C-8DC5-DF7AB1055402}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_DradDrop", "11_DradDrop\11_DradDrop.csproj", "{24E8943E-6621-45AD-8416-1D5B8A9F9670}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_DradDrop", "11_DradDrop\11_DradDrop.csproj", "{24E8943E-6621-45AD-8416-1D5B8A9F9670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_GraphicsGDI", "12_GraphicsGDI\12_GraphicsGDI.csproj", "{58AD7EC6-3304-41D0-B715-896770DFCA7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{24E8943E-6621-45AD-8416-1D5B8A9F9670}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24E8943E-6621-45AD-8416-1D5B8A9F9670}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24E8943E-6621-45AD-8416-1D5B8A9F9670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AD7EC6-3304-41D0-B715-896770DFCA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AD7EC6-3304-41D0-B715-896770DFCA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AD7EC6-3304-41D0-B715-896770DFCA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AD7EC6-3304-41D0-B715-896770DFCA7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
